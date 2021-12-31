@@ -1,0 +1,17 @@
+
+[
+  {
+    "id": "1",
+    "subtitle": "NEW ARRIVALS",
+    "title": "Spring Collection",
+    "url": "/bedroom/shop",
+    "bgImage": "/assets/images/hero-slider/hero-slider-four/1.png"
+  },
+  {
+    "id": "2",
+    "subtitle": "Deluxe Lineup",
+    "title": "New Products",
+    "url": "/bedroom/shop",
+    "bgImage": "/assets/images/hero-slider/hero-slider-four/2.png"
+  }
+]
