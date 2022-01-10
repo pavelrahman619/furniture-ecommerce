@@ -11,6 +11,7 @@ import products from "../data/products.json";
 import "../assets/scss/styles.scss";
 import Preloader from "../components/Preloader";
 
+
 class MyApp extends App {
   constructor(props) {
     super(props);
@@ -19,6 +20,8 @@ class MyApp extends App {
   }
 
   render() {
+
+
     const { Component, pageProps, reduxStore } = this.props;
 
     return (
