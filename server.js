@@ -22,10 +22,10 @@ app.prepare()
 		const server = express();
 
 		server.get( '/getProducts', ( req, response ) => {
-			WooCommerce.get('orders', function(err, data, res) {
+			WooCommerce.get('products', function(err, data, res) {
 				response.json( 
-                    console.log(res)
-                    //JSON.parse(res) 
+                    //console.log(res)
+                    JSON.parse(res) 
                     );
 			});
 		} );
