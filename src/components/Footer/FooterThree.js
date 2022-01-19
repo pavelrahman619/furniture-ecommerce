@@ -26,7 +26,7 @@ const FooterThree = () => {
   };
 
   return (
-    <footer className="space-pt--100 space-pb--100 border-top--grey text-center">
+    <footer className="wooden-background space-pt--100 space-pb--100 border-top--grey text-center">
       <Container>
         <Row>
           <Col lg={12}>

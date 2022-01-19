@@ -58,18 +58,10 @@ const FullwidthLeftSidebar = ({ products }) => {
     <LayoutTwo>
       {/* breadcrumb */}
       <BreadcrumbOne
-        pageTitle="Shop Full Width Left Sidebar"
+        pageTitle=""
         backgroundImage="/assets/images/backgrounds/breadcrumb-bg-1.png"
       >
-        <ul className="breadcrumb__list">
-          <li>
-            <Link href="/" as={process.env.PUBLIC_URL + "/"}>
-              <a>Home</a>
-            </Link>
-          </li>
-
-          <li>Shop Full Width Left Sidebar</li>
-        </ul>
+     
       </BreadcrumbOne>
       <div className="shop-page-content">
         {/* shop page header */}

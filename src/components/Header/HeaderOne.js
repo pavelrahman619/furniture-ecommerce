@@ -48,7 +48,7 @@ const HeaderOne = ({ aboutOverlay, cartItems, wishlistItems }) => {
   return (
     <Fragment>
       <header
-        className={`topbar-shadow ${scroll > headerTop ? "is-sticky" : ""}`}
+        className={`topbar-shadow ${scroll > headerTop ? "is-sticky wooden-background" : ""}`}
       >
         <Container className="wide">
           <div className="header-content d-flex align-items-center justify-content-between position-relative space-py-mobile-only--30">

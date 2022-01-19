@@ -26,11 +26,11 @@ const FooterTwo = ({ footerBgClass }) => {
   };
   return (
     <footer
-      className={`space-pt--100 space-pb--50 ${
+      className={`wooden-background space-pt--100 space-pb--50 ${
         footerBgClass ? footerBgClass : "bg-color--grey"
       }`}
     >
-      <Container className="wide">
+      <Container className=" wide">
         <Row>
           <Col className="footer-single-widget space-mb--50">
             {/* logo */}
@@ -50,8 +50,8 @@ const FooterTwo = ({ footerBgClass }) => {
             {/*=======  copyright text  =======*/}
             <div className="footer-single-widget__copyright">
               &copy; {new Date().getFullYear() + " "}
-              <a href="https://www.hasthemes.com" target="_blank">
-                MOtif Furnitures
+              <a href="https://www.motif-bd.com" target="_blank">
+                Motif Furnitures
               </a>
               <span>All Rights Reserved</span>
             </div>

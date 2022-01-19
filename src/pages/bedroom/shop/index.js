@@ -13,7 +13,7 @@ import {
   ShopSidebar,
   ShopProducts
 } from "../../../components/Shop";
-
+import fetch from 'isomorphic-unfetch'
 const FullwidthLeftSidebar = ({ products }) => {
   const [layout, setLayout] = useState("grid four-column");
   const [sortType, setSortType] = useState("");
@@ -58,7 +58,7 @@ const FullwidthLeftSidebar = ({ products }) => {
     <LayoutTwo>
       {/* breadcrumb */}
       <BreadcrumbOne
-        pageTitle="Shop Full Width Left Sidebar"
+        pageTitle=""
         backgroundImage="/assets/images/backgrounds/breadcrumb-bg-1.png"
       >
         <ul className="breadcrumb__list">
@@ -131,6 +131,9 @@ const FullwidthLeftSidebar = ({ products }) => {
 };
 
 const mapStateToProps = (state) => {
+  // const res = await fetch( `localhost:3000/getProducts`)
+  // const productData = await res.json()
+  // console.log(productData)
   return {
     products: state.productData
   };

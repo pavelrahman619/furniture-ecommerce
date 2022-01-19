@@ -10,14 +10,27 @@ import fetchProducts from "../redux/actions/productActions";
 import products from "../data/products.json";
 import "../assets/scss/styles.scss";
 import Preloader from "../components/Preloader";
-
+import fetch from 'isomorphic-unfetch'
 
 class MyApp extends App {
   constructor(props) {
     super(props);
     this.persistor = persistStore(props.reduxStore);
+   this.state = {
+     products :[]
+   }
+console.log(this.state.products)
     props.reduxStore.dispatch(fetchProducts(products));
   }
+ async componentDidMount(){
+
+  // const res = await fetch( `http://localhost:3000/getProducts`)
+  // const productData = await res.json()
+  // console.log(productData)
+  // this.setState({
+  //    products : productData
+  //  })
+ }
 
   render() {
 

@@ -49,7 +49,7 @@ const HeaderThree = ({ cartItems, wishlistItems }) => {
   return (
     <Fragment>
       <header
-        className={`topbar-shadow ${scroll > headerTop ? "is-sticky" : ""}`}
+        className={`topbar-shadow  ${scroll > headerTop ? "is-sticky wooden-background" : ""}`}
       >
         <Container className="wide">
           <Row className="header-content align-items-center space-pt--30 space-pb--30">
