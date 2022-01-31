@@ -6,6 +6,7 @@ const Creative = () => {
     <LayoutThree>
       {/* creative content */}
       <CreativeContent />
+      
     </LayoutThree>
   );
 };

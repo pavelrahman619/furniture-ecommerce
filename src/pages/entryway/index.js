@@ -1,21 +1,23 @@
 import Head from "next/head";
 import { connect } from "react-redux";
 import { getProducts } from "../../lib/product";
-import { LayoutTen } from "../../components/Layout";
+import { LayoutTwo } from "../../components/Layout";
 import { HeroSliderEight } from "../../components/HeroSlider";
 import { VideoIconContent, ImageTextContent } from "../../components/About";
 import { ProductSliderThree } from "../../components/ProductSlider";
 import { BrandLogoTwo } from "../../components/BrandLogo";
-import { ImageCtaFour } from "../../components/Cta";
+import { ImageCtaFour, ImageCtaThree } from "../../components/Cta";
 import { ImageSliderOne } from "../../components/ImageSlider";
-
-import heroSliderData from "../../data/hero-sliders/hero-slider-eight.json";
+import { HeroSliderTwelve } from "../../components/HeroSlider";
+import heroSliderData from "../../data/hero-sliders/hero-slider-entrance.json";
 import brandLogoData from "../../data/brand-logos/brand-logo-one.json";
 import imageSliderData from "../../data/image-sliders/image-slider-one.json";
+import Entryway from "../../components/LandingpageContent/entryway";
+import EntranceCTA from "../../components/ImageCTA/EntranceCTA";
 
 const jewelry = ({ products }) => {
   return (
-    <LayoutTen>
+    <LayoutTwo aboutOverlay={false}>
       <Head>
         <link
           href="https://fonts.googleapis.com/css?family=Spectral:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
@@ -23,28 +25,13 @@ const jewelry = ({ products }) => {
         />
       </Head>
       {/* hero slider */}
-      <HeroSliderEight
+      <HeroSliderTwelve
         sliderData={heroSliderData}
-        spaceBottomClass="space-mb--30"
+        spaceBottomClass="space-mb--r130"
       />
-      {/* video icon content */}
-      <VideoIconContent />
-
-      {/* product slider */}
-      <ProductSliderThree products={products} />
-
-      {/* image text content */}
-      <ImageTextContent />
-
-      {/* brand logo */}
-      <BrandLogoTwo brandLogoData={brandLogoData} />
-
-      {/* cta */}
-      <ImageCtaFour />
-
-      {/* image slider */}
-      <ImageSliderOne imageSliderData={imageSliderData} />
-    </LayoutTen>
+    <Entryway/>
+    <EntranceCTA spaceBottomClass="space-mb--r130"/>
+    </LayoutTwo>
   );
 };
 

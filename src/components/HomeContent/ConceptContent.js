@@ -13,7 +13,7 @@ const ConceptContent = () => {
                   <p className="section-label space-mb--20">SS-2020</p>
                   <h1>Warm Welcomes</h1>
                   <p>
-                    Channel the laid back energy of the Golden State with the new and exclusive Amber Lewis Collection
+                  All of the rooms are linked together by an aesthetic that is recognisable in its minimal lines, harmonious tones, sophisticated materials and precious details.
                   </p>
                   <Link
                     href="/shop/left-sidebar"
@@ -61,7 +61,7 @@ const ConceptContent = () => {
                     <img
                       src={
                         process.env.PUBLIC_URL +
-                        "/assets/images/category/living-room/tables.png"
+                        "/assets/images/category/living-room/table.webp"
                       }
                       className="img-fluid"
                       alt=""
@@ -162,16 +162,16 @@ const ConceptContent = () => {
                     style={{
                       backgroundImage: `url(${
                         process.env.PUBLIC_URL +
-                        "/assets/images/banners/banner-concept.jpg"
+                        "/assets/images/banners/living-room.webp"
                       })`
                     }}
                   >
                     <p className="text">
-                      <span>Musical</span>
+                      <span>Endeavour</span>
                       <br />
-                      <span>Chairs</span>
+                      <span>To</span>
                       <br />
-                      <span>of Spring</span>
+                      <span>Inspire</span>
                     </p>
                   </div>
                 </div>

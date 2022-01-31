@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const VideoIconContent = () => {
   const [modalStatus, isOpen] = useState(false);
   return (
-    <div className="video-icon-content-area space-mb--r130">
+    <div className="video-icon-content-area space-mb--r100">
       <Container className="wide">
         <Row className="align-items-center">
           <Col lg={7}>

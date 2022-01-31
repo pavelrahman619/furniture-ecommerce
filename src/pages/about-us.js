@@ -32,8 +32,8 @@ const AboutTwo = () => {
         <div className="about-content space-mb--r100">
           <Container className="wide">
             <SectionTitleOne
-              title="Basic minimalism"
-              subtitle="LEZADA STORE - SIMPLY AND BASIC"
+              title="Origin of Motif"
+              subtitle="How it started"
             />
             <Row>
               <Col xl={6} lg={6}>
@@ -51,14 +51,20 @@ const AboutTwo = () => {
               <Col xl={5} lg={6} className="ml-auto">
                 <div className="about-page-text space-mb--30 mt-0">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur cing elit. Suspe
-                    ndisse suscipit sagittis leo sit estibulum issim Lorem ipsum
-                    dolor sit amet, consectetur cing elit. ipsum dolor sit amet,
-                    consectetur cing elit. Suspe ndisse suscipit sagittis leo
-                    sit es
+                  Motif was founded by current URBN chairman and president Dick Hayne, having heard the plea of a friend. 
+                  She had just moved to the suburbs of Philadelphia, and was dissatisfied with the shopping options available to her. 
+                  </p></div>
+                  <div className="about-page-text space-mb--30 mt-0">
+                  <p>
+                  Now a distance from Urban Outfitters—a brand she also was aging out of—there was a void in her life. She longed for a store to indulge her creative side.
+                   Dick, realizing this wasn't an isolated phenomenon, went on to build a lifestyle brand that catered to creative, educated and affluent 30-45 year-old women.
+                   </p></div>
+                   <div className="about-page-text space-mb--30 mt-0">
+                    <p> Named after his college major (but with a decidedly French twist), 
+                  Anthropologie opened its very first doors in the autumn of 1992 in Wayne, Pennsylvania. We now operate over 200 stores worldwide. 
                   </p>
                 </div>
-                <div className="about-widget space-mb--35">
+                {/* <div className="about-widget space-mb--35">
                   <h2 className="widget-title space-mb--25">ADDRESS</h2>
                   <p className="widget-content">
                     1800 Abbot Kinney Blvd. Unit D &amp; E Venice
@@ -72,7 +78,7 @@ const AboutTwo = () => {
                 <div className="about-widget">
                   <h2 className="widget-title space-mb--25">EMAIL</h2>
                   <p className="widget-content">contact@lezadastore.com</p>
-                </div>
+                </div> */}
               </Col>
             </Row>
           </Container>
@@ -81,7 +87,7 @@ const AboutTwo = () => {
         {/* testimonial */}
         <TestimonialTwo
           testimonialData={testimonialTwoData}
-          backgroundImage="/assets/images/backgrounds/testimonials-bg.png"
+          backgroundImage="/assets/images/backgrounds/testimonial.webp"
         />
         <div className="space-mb--r100"></div>
 
@@ -132,11 +138,9 @@ const AboutTwo = () => {
                 {/*=======  about single block  =======*/}
                 <div className="about-single-block">
                   <p className="subtitle">On at oders over $99</p>
-                  <h1>Free shipping &amp; return</h1>
+                  <h1>Returning &amp; and Exchanging</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur cing elit. Suspe
-                    ndisse suscipit sagittis leo sit met condimentum estibulum
-                    issim Lorem ipsum dolor sit amet, consectetur cing elit.
+                  Return or exchange online orders by mail or in a store. Start your online return or exchange and print your return label. To locate your order number, sign in to your Order History. Locate a store near you to return your item(s) in a store for free. 
                   </p>
                   <Link
                     href="/other/about"
@@ -150,11 +154,9 @@ const AboutTwo = () => {
                 {/*=======  about single block  =======*/}
                 <div className="about-single-block">
                   <p className="subtitle">Support 24/7</p>
-                  <h1>Money back</h1>
+                  <h1>Cancelation</h1>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur cing elit. Suspe
-                    ndisse suscipit sagittis leo sit met condimentum estibulum
-                    issim Lorem ipsum dolor sit amet, consectetur cing elit.
+                  As soon as we receive your order, we start working on it right away. While we’re unable to make changes after you've placed your order, you do have a short window of time to cancel items from your order before they begin processing. Please note, only items eligible for cancellation will be shown, and all quantities of the selected item will be cancelled. If you do not see the “Cancel Items” option in the order details, that indicates that we are unable to process a cancellation. However, once you have received your order, you may return or exchange any eligible items. 
                   </p>
                   <Link
                     href="/other/about"

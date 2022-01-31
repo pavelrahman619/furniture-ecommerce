@@ -49,10 +49,30 @@ const HeaderThree = ({ cartItems, wishlistItems }) => {
   return (
     <Fragment>
       <header
+        className={`bg-dark ${scroll > headerTop ? "is-sticky wooden-background" : ""}`}
+      >
+        <Container className="wide">
+          <Row className="header-content text-white align-items-center space-pt--10 space-pb--10">
+      
+
+            <Col xs={12} lg={12}>
+              <div className="header-content__logo text-center text-lg-center">
+               
+             
+                   FREE NATIONWIDE SHIPPING!
+                
+              </div>
+            </Col>
+
+          
+          </Row>
+        </Container>
+      </header>
+      <header
         className={`topbar-shadow  ${scroll > headerTop ? "is-sticky wooden-background" : ""}`}
       >
         <Container className="wide">
-          <Row className="header-content align-items-center space-pt--30 space-pb--30">
+          <Row className="header-content align-items-center space-pt--10 space-pb--10">
             <Col lg={4} className="d-none d-lg-block">
               <div className="header-content__navigation">
                 <button

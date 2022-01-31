@@ -78,17 +78,17 @@ const FooterTwo = ({ footerBgClass }) => {
           </Col>
 
           <Col className="footer-single-widget space-mb--50">
-            <h5 className="footer-single-widget__title">USEFUL LINKS</h5>
+            <h5 className="footer-single-widget__title">POLICY PAGEs</h5>
             <nav className="footer-single-widget__nav">
               <ul>
                 <li>
-                  <a href="#">Returns</a>
+                  <a href="#">Return Policy</a>
                 </li>
                 <li>
-                  <a href="#">Support Policy</a>
+                  <a href="#">Refund Policy</a>
                 </li>
                 <li>
-                  <a href="#">Size guide</a>
+                  <a href="#">Shipping Policy</a>
                 </li>
                 <li>
                   <a href="#">FAQs</a>

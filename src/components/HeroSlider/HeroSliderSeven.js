@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Swiper from "react-id-swiper";
 import { Container, Row, Col } from "react-bootstrap";
-
-const HeroSliderSeven = ({ sliderData }) => {
+import ReactPlayer from 'react-player/lazy';
+import Vimeo from '@u-wave/react-vimeo';
+const HeroSliderSeven= ({ sliderData }) => {
   const params = {
     loop: true,
     speed: 1000,
@@ -26,47 +27,93 @@ const HeroSliderSeven = ({ sliderData }) => {
   return (
     <div className="hero-slider-seven">
       <div className="hero-slider-seven__wrapper">
-        <Swiper {...params}>
+      
           {sliderData &&
             sliderData.map((single, i) => {
               return (
                 <div
-                  className="hero-slider-seven__slide bg-img"
-                  style={{ backgroundImage: `url(${single.bgImage})` }}
+                
+                  className="wrapper hero-slider-seven__slide bg-img"
+                  // style={{ backgroundImage: `url(${single.bgImage})` }}
                   key={i}
                 >
-                  <Container className="h-100">
-                    <Row className="align-items-center flex-column flex-lg-row justify-content-center justify-content-lg-start h-100">
-                      <Col lg={5} className="ml-auto">
-                        <div className="hero-slider-seven__content">
-                          <h5 className="sub-title">{single.subtitle}</h5>
-                          <h1
-                            className="title"
-                            dangerouslySetInnerHTML={{ __html: single.title }}
-                          />
-                          <div className="slider-link">
-                            <Link
-                              href={single.url}
-                              as={process.env.PUBLIC_URL + single.url}
-                            >
-                              <a className="lezada-button lezada-button--medium">
-                                shop now
-                              </a>
-                            </Link>
-                          </div>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Container>
+      
+<div style={{zIndex:"20!important",position:"absolute!important"}} >
+                  
+                
+                  
+                  </div>
+                  <div style={{zIndex:"-4"}} className="mobile">
+                    <ReactPlayer
+  url="https://res.cloudinary.com/american-international-university-bangladesh/video/upload/v1643545451/office-banner_b7fobo.mp4"
+ 
+  playing
+  loop
+  muted
+  width="auto"
+  height="auto"
+  className="player"
+/>
+<div className='overlay'>
+
+
+<svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+
+
+        </div>
+                  {/* <Vimeo
+  video="671622213"
+  autoplay
+  width="100%"
+  height="inherent"
+/> */}
+</div>
+<div className="desktop">
+
+<ReactPlayer
+  url="https://res.cloudinary.com/american-international-university-bangladesh/video/upload/v1643545547/office-banner-mobile_xz8k2v.mp4"
+ 
+  playing
+  loop
+  muted
+  width="auto"
+  height="auto"
+  className="player"
+/>
+<div className='overlay'>
+
+
+<svg class="arrows">
+              <path class="a1" d="M0 0 L30 32 L60 0"></path>
+              <path class="a2" d="M0 20 L30 52 L60 20"></path>
+              <path class="a3" d="M0 40 L30 72 L60 40"></path>
+            </svg>
+
+
+        </div>
+{/* <Vimeo
+  video="671622238"
+  autoplay
+  width="auto"
+  height="auto"
+/> */}
+</div>
+
+
                   <div className="hero-slider-seven__pagination">
                     <span className="current">{i + 1}</span>
                     <span className="border"></span>
                     <span className="total">{sliderData.length}</span>
                   </div>
+              
                 </div>
               );
             })}
-        </Swiper>
+      
       </div>
     </div>
   );

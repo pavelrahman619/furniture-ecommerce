@@ -1507,7 +1507,7 @@
 		}
 
 @include respond (extra-large-mobile) {
-			max-width: 170px;
+			max-width: 270px;
 			margin: 0 auto;
 			margin-bottom: 20px;
 		}
@@ -1515,7 +1515,7 @@
 @include respond (large-mobile) {
 			display: block;
 
-			max-width: 150px;
+			max-width: 250px;
 			margin: 0 auto;
 			margin-bottom: 20px;
 		}
@@ -1614,7 +1614,7 @@
 			&__image {
 				transition-delay: 0.3s;
 				transform: scale(1);
-
+				
 				opacity: 1;
 			}
 
@@ -1792,7 +1792,7 @@
 		}
 
 @include respond (extra-large-mobile) {
-			max-width: 170px;
+			max-width: 270px;
 			margin: 0 auto;
 			margin-bottom: 20px;
 		}
@@ -1800,7 +1800,7 @@
 @include respond (large-mobile) {
 			display: block;
 
-			max-width: 150px;
+			max-width: 250px;
 			margin: 0 auto;
 			margin-bottom: 20px;
 		}
@@ -3523,6 +3523,70 @@
 		}
 	}
 }
+.player {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+	.overlay {
+		position: absolute!important;
+		top: 0!important;
+		left: 0!important;
+		width: 100%!important;
+		height: 100%!important;
+		background-color: rgba(0, 0, 0, 0.5)!important;
+		color: white!important;
+		font-size: 24px!important;
+	  }
 
-/*=====  End of hero slider  ======*/
 
+	  
+	  .arrows {
+		width: 60px;
+		height: 72px;
+		position: absolute;
+		left: 50%;
+		margin-left: -30px;
+		bottom: 20px;
+	  }
+	  
+	  .arrows path {
+		stroke: white;
+		fill: transparent;
+		stroke-width: 1px;  
+		animation: arrow 2s infinite;
+		-webkit-animation: arrow 2s infinite; 
+	  }
+	  
+	  @keyframes arrow
+	  {
+	  0% {opacity:0}
+	  40% {opacity:1}
+	  80% {opacity:0}
+	  100% {opacity:0}
+	  }
+	  
+	  @-webkit-keyframes arrow /*Safari and Chrome*/
+	  {
+	  0% {opacity:0}
+	  40% {opacity:1}
+	  80% {opacity:0}
+	  100% {opacity:0}
+	  }
+	  
+	  .arrows path.a1 {
+		animation-delay:-1s;
+		-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+	  }
+	  
+	  .arrows path.a2 {
+		animation-delay:-0.5s;
+		-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+	  }
+	  
+	  .arrows path.a3 { 
+		animation-delay:0s;
+		-webkit-animation-delay:0s; /* Safari 和 Chrome */
+	  }

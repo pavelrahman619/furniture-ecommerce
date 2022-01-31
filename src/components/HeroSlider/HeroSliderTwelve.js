@@ -6,10 +6,10 @@ const HeroSliderTwelve = ({ sliderData, spaceBottomClass }) => {
   const params = {
     loop: true,
     speed: 1000,
-    // autoplay: {
-    //   delay: 5000,
-    //   disableOnInteraction: false
-    // },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
     watchSlidesVisibility: true,
     navigation: {
       nextEl: ".swiper-button-next",

@@ -357,12 +357,12 @@
 							font-size: 34px;
 							font-weight: 500;
 							font-style: normal;
-							line-height: 48px;
+							line-height: 0px;
 
 							transform: translateY(0);
 							text-transform: capitalize;
 
-							color: $black--two;
+							color: white;
 
 @include respond(large-desktop) {
 								font-size: 25px;

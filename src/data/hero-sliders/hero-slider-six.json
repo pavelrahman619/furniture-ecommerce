@@ -1,20 +1,20 @@
 [
   {
     "id": "1",
-    "subtitle": "NEW ARRIVALS",
-    "title": "Summer 2020",
+    "subtitle": "New Bina Collection",
+    "title": "Practical Elegant Design",
     "url": "/shop/left-sidebar",
-    "image": "/assets/images/hero-slider/hero-slider-six/3.png",
+    "image": "/assets/images/hero-slider/hero-slider-six/3.webp",
     "bgImage": "",
     "bgColor": "#f5e8e5"
   },
 
   {
     "id": "3",
-    "subtitle": "New collection A-W ss17",
-    "title": "Chair <br/> Collection",
+    "subtitle": "French Country Furniture",
+    "title": "Luxury <br/> Home Decor",
     "url": "/shop/left-sidebar",
-    "image": "/assets/images/hero-slider/hero-slider-six/1.png",
+    "image": "/assets/images/hero-slider/hero-slider-six/4.webp",
     "bgImage": "",
     "bgColor": "#dbe7ff"
   }

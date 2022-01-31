@@ -1,8 +1,39 @@
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
-
+import HeroSliderSixHome from "../HeroSlider/HeroSliderSixHome";
+import heroSliderData from "../../data/hero-sliders/hero-slider-six.json"
+import { SectionTitleOne } from "../SectionTitle";
 const CreativeContent = () => {
   return (
+    <>
+   <HeroSliderSixHome sliderData={heroSliderData}/>
+   <div className="space-mb--r100"></div>
+   <div className="section-title-container">
+        <Container>
+          <Row className="space-mb--50">
+            <Col xs={6}>
+              <div className="section-title__label">
+                <p>
+                  SS-2020 <span className="line">84</span>
+                </p>
+              </div>
+            </Col>
+            <Col xs={6} className="text-right">
+              <div className="section-title__label">
+                <p>
+                  INNOVATIVE <br /> DESIGN
+                </p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <div className="col-lg-12">
+              <SectionTitleOne title="Our Signature Categories"/>
+              
+            </div>
+          </Row>
+        </Container>
+      </div>
     <Container className="wide">
       <Row>
         <Col lg={6}>
@@ -163,7 +194,7 @@ const CreativeContent = () => {
                   <img
                     src={
                       process.env.PUBLIC_URL +
-                      "/assets/images/banners/creative-home/kitchen.png"
+                      "/assets/images/banners/creative-home/entryway-desktop.webp"
                     }
                     className="mobile img-fluid"
                     alt=""
@@ -171,7 +202,7 @@ const CreativeContent = () => {
                   <img
                     src={
                       process.env.PUBLIC_URL +
-                      "/assets/images/banners/creative-home/kitchen-mobile.png"
+                      "/assets/images/banners/creative-home/entryway-mobile.webp"
                     }
                     className="desktop img-fluid"
                     alt=""
@@ -181,16 +212,16 @@ const CreativeContent = () => {
                   <div>
                   <p className="mobile-font" >
                       <Link
-                        href="/kitchen"
-                        as={process.env.PUBLIC_URL + "/kitchen"}
+                        href="/entryway"
+                        as={process.env.PUBLIC_URL + "/entryway"}
                       >
-                        <a>Kitchen</a>
+                        <a>Entrance</a>
                       </Link>
                     </p>
                     <p className="mobile-font-smaller"  >
                     <Link
-                      href="/kitchen/shop"
-                      as={process.env.PUBLIC_URL + "/kitchen/shop"}
+                      href="/entryway/shop"
+                      as={process.env.PUBLIC_URL + "/entryway/shop"}
                     >
                       <a>+ Shop Now</a>
                     </Link>
@@ -198,8 +229,8 @@ const CreativeContent = () => {
                   </div>
                 </div>
                 <Link
-                  href="/kitchen"
-                  as={process.env.PUBLIC_URL + "/kitchen"}
+                  href="/entryway"
+                  as={process.env.PUBLIC_URL + "/entryway"}
                 >
                   <a className="banner-link"></a>
                 </Link>
@@ -257,13 +288,13 @@ const CreativeContent = () => {
         </Col>
         <Col lg={12}>
           <Row>
-            <Col lg={3}>
+            <Col lg={6}>
               <div className="single-category single-category--three space-mb--30">
                 <div className="single-category__image single-category__image--three single-category__image--three--creativehome">
                   <img
                     src={
                       process.env.PUBLIC_URL +
-                      "/assets/images/banners/creative-home/entryway-mobile.png"
+                      "/assets/images/banners/creative-home/kitchen-desktop.webp"
                     }
                     className="mobile img-fluid"
                     alt=""
@@ -271,7 +302,7 @@ const CreativeContent = () => {
                   <img
                     src={
                       process.env.PUBLIC_URL +
-                      "/assets/images/banners/creative-home/entryway-mobile.png"
+                      "/assets/images/banners/creative-home/kitchen-mobile.webp"
                     }
                     className="desktop img-fluid"
                     alt=""
@@ -281,16 +312,16 @@ const CreativeContent = () => {
                   <div>
                   <p className="mobile-font" >
                       <Link
-                        href="/entryway"
-                        as={process.env.PUBLIC_URL + "/entryway"}
+                        href="/kitchen"
+                        as={process.env.PUBLIC_URL + "/kitchen"}
                       >
-                        <a>Entryway</a>
+                        <a>Kitchen and Dining</a>
                       </Link>
                     </p>
                     <p className="mobile-font-smaller"  >
                     <Link
-                      href="/entryway/shop"
-                      as={process.env.PUBLIC_URL + "/entryway/shop"}
+                      href="/kitchen/shop"
+                      as={process.env.PUBLIC_URL + "/kitchen/shop"}
                     >
                       <a>+ Shop Now</a>
                     </Link>
@@ -298,14 +329,14 @@ const CreativeContent = () => {
                   </div>
                 </div>
                 <Link
-                  href="/entryway"
-                  as={process.env.PUBLIC_URL + "/entryway"}
+                  href="/kitchen"
+                  as={process.env.PUBLIC_URL + "/kitchen"}
                 >
                   <a className="banner-link"></a>
                 </Link>
               </div>
             </Col>
-            <Col lg={6}>
+            {/* <Col lg={6}>
               <div className="single-category single-category--three space-mb--30">
                 <div className="single-category__image single-category__image--three single-category__image--three--creativehome">
                   <img
@@ -352,8 +383,8 @@ const CreativeContent = () => {
                   <a className="banner-link"></a>
                 </Link>
               </div>
-            </Col>
-            <Col lg={3}>
+            </Col> */}
+            <Col lg={6}>
               <div className="single-category single-category--three space-mb--30">
                 <div className="single-category__image single-category__image--three single-category__image--three--creativehome">
                   <img
@@ -361,10 +392,17 @@ const CreativeContent = () => {
                       process.env.PUBLIC_URL +
                       "/assets/images/banners/creative-home/outdoor.png"
                     }
-                    className="img-fluid"
+                    className="desktop img-fluid"
                     alt=""
                   />
-                  
+                   <img
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/assets/images/banners/creative-home/outdoor-dektop.png"
+                    }
+                    className="mobile img-fluid"
+                    alt=""
+                  />
                 </div>
                 <div className="single-category__content single-category__content--three single-category__content--three--creativehome">
                   <div>
@@ -398,6 +436,7 @@ const CreativeContent = () => {
         </Col>
       </Row>
     </Container>
+    </>
   );
 };
 

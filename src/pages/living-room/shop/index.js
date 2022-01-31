@@ -15,6 +15,7 @@ import {
 } from "../../../components/Shop";
  
 const FullwidthLeftSidebar = ({ products }) => {
+  console.log(products)
   const [layout, setLayout] = useState("grid four-column");
   const [sortType, setSortType] = useState("");
   const [sortValue, setSortValue] = useState("");

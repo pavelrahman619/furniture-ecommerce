@@ -5,6 +5,8 @@ import { ConceptContent } from "../../components/HomeContent";
 
 import heroSliderData from "../../data/hero-sliders/hero-slider-twelve.json";
 import imageSliderData from "../../data/image-sliders/image-slider-one.json";
+import { ImageCtaThree } from "../../components/Cta";
+import LivingroomCTA from "../../components/ImageCTA/LivingroomCTA";
 
 const Concept = () => {
   return (
@@ -17,7 +19,7 @@ const Concept = () => {
       {/* home content */}
       <ConceptContent />
       {/* image slider */}
-      <ImageSliderTwo imageSliderData={imageSliderData} />
+     <LivingroomCTA spaceBottomClass="space-mb--r130"/>
     </LayoutTwo>
   );
 };

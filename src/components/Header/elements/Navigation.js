@@ -297,7 +297,7 @@ const Navigation = () => {
                 
               </ul>
               <Link href="/custom" as={process.env.PUBLIC_URL + "/custom"}>
-                <a>Custom</a>
+                <a>Dining</a>
               </Link>
               <ul className="sub-menu--mega__list">
                 <li>
@@ -305,7 +305,7 @@ const Navigation = () => {
                     href="/element/countdown-timers"
                     as={process.env.PUBLIC_URL + "/element/countdown-timers"}
                   >
-                    <a>Beds</a>
+                    <a>Tables</a>
                   </Link>
                 </li>
                 <li>
@@ -329,7 +329,7 @@ const Navigation = () => {
                     href="/element/google-maps"
                     as={process.env.PUBLIC_URL + "/element/google-maps"}
                   >
-                    <a>Doors</a>
+                    <a>Cupboards</a>
                   </Link>
                 </li>
               </ul>
@@ -349,19 +349,19 @@ const Navigation = () => {
           </ul>
         </li>
         <li>
-          <Link href="/blogs" as={process.env.PUBLIC_URL + "/"}>
+          <Link href="/blogs" as={process.env.PUBLIC_URL + "/blogs"}>
             <a>Blogs</a>
           </Link>
          
         </li>
         <li>
-          <Link href="/about-us" as={process.env.PUBLIC_URL + "/"}>
+          <Link href="/about-us" as={process.env.PUBLIC_URL + "/about-us"}>
             <a>About Us</a>
           </Link>
          
         </li>
         <li>
-          <Link href="/contact-us" as={process.env.PUBLIC_URL + "/"}>
+          <Link href="/contact-us" as={process.env.PUBLIC_URL + "/contact-us"}>
             <a>Contact Us</a>
           </Link>
          

@@ -16,30 +16,25 @@ const HoverBannerOne = ({ spaceBottomClass }) => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "/assets/images/banners/banner-furniture-1.jpg"
+                    "/assets/images/banners/office-shelf.webp"
                   }
                   className="img-fluid"
                   alt=""
                 />
               </div>
               <div className="single-category__content single-category__content--three single-category__content--three--creativehome  single-category__content--three--banner space-mt--25 space-mb--25">
-                <div className="title">
-                  <p>
+                <div  className="title">
+                  <p >
                     <Link
                       href="/shop/left-sidebar"
                       as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
                     >
-                      <a>
-                        Wooden <span>Chair</span>
+                      <a style={{color:"white!important"}}>
+                        Shelves 
                       </a>
                     </Link>
                   </p>
-                  <Link
-                    href="/shop/left-sidebar"
-                    as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
-                  >
-                    <a>Shop Now</a>
-                  </Link>
+                 
                 </div>
               </div>
               <Link
@@ -56,7 +51,7 @@ const HoverBannerOne = ({ spaceBottomClass }) => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "/assets/images/banners/banner-furniture-2.jpg"
+                    "/assets/images/banners/office-desk.webp"
                   }
                   className="img-fluid"
                   alt=""
@@ -70,16 +65,11 @@ const HoverBannerOne = ({ spaceBottomClass }) => {
                       as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
                     >
                       <a>
-                        Thumbler <span>Alarm Clock</span>
+                        Desks 
                       </a>
                     </Link>
                   </p>
-                  <Link
-                    href="/shop/left-sidebar"
-                    as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
-                  >
-                    <a>Shop Now</a>
-                  </Link>
+             
                 </div>
               </div>
               <Link
@@ -96,7 +86,7 @@ const HoverBannerOne = ({ spaceBottomClass }) => {
                 <img
                   src={
                     process.env.PUBLIC_URL +
-                    "/assets/images/banners/banner-furniture-3.jpg"
+                    "/assets/images/banners/office-conf-table.webp"
                   }
                   className="img-fluid"
                   alt=""
@@ -110,16 +100,11 @@ const HoverBannerOne = ({ spaceBottomClass }) => {
                       as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
                     >
                       <a>
-                        Home <span>Decoration</span>
+                        Tables
                       </a>
                     </Link>
                   </p>
-                  <Link
-                    href="/shop/left-sidebar"
-                    as={process.env.PUBLIC_URL + "/shop/left-sidebar"}
-                  >
-                    <a>Shop Now</a>
-                  </Link>
+              
                 </div>
               </div>
               <Link

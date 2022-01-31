@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "subtitle": "01/",
+    "title": "Sophisticated <br /> high quality <br /> material",
+    "url": "/shop/left-sidebar",
+    "image": "/assets/images/hero-slider/hero-slider-twelve/entrance1.webp"
+  },
+  {
+    "id": "2",
+    "subtitle": "02/",
+    "title": "Beautifully <br /> persolnalized <br /> space",
+    "url": "/shop/left-sidebar",
+    "image": "/assets/images/hero-slider/hero-slider-twelve/entrance2.webp"
+  }
+]

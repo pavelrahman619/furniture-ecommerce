@@ -66,6 +66,17 @@ const NavigationOverlay = ({ activeStatus, getActiveStatus }) => {
                       </li>
                       <li className="has-children-submenu">
                       <Link
+                                  href="/kitchen/shop"
+                                  as={
+                                    process.env.PUBLIC_URL + "/kitchen/shop"
+                                  }
+                                >
+                                  <a>Dining</a>
+                                </Link>
+                        
+                      </li>
+                      <li className="has-children-submenu">
+                      <Link
                                   href="/office/shop"
                                   as={
                                     process.env.PUBLIC_URL + "/office/shop"
@@ -105,17 +116,7 @@ const NavigationOverlay = ({ activeStatus, getActiveStatus }) => {
                                 </Link>
                        
                       </li>
-                      <li className="has-children-submenu">
-                      <Link
-                                  href="/custom"
-                                  as={
-                                    process.env.PUBLIC_URL + "/custom"
-                                  }
-                                >
-                                  <a>Custom</a>
-                                </Link>
-                        
-                      </li>
+                     
                     </ul>
                   </Accordion.Collapse>
                 </Accordion>

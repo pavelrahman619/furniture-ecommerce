@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "subtitle": "01/",
+    "title": "Aesthetically<br /> coherent <br />",
+    "url": "/shop/left-sidebar",
+    "image": "/assets/images/hero-slider/hero-slider-twelve/kitchen1.webp"
+  },
+  {
+    "id": "2",
+    "subtitle": "02/",
+    "title": "Precious <br /> details <br />",
+    "url": "/shop/left-sidebar",
+    "image": "/assets/images/hero-slider/hero-slider-twelve/kitchen2.webp"
+  }
+]

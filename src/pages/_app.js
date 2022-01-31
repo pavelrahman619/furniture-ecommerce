@@ -7,7 +7,7 @@ import { ToastProvider } from "react-toast-notifications";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import fetchProducts from "../redux/actions/productActions";
-import products from "../data/products.json";
+import products from "../data/products_new.json";
 import "../assets/scss/styles.scss";
 import Preloader from "../components/Preloader";
 import fetch from 'isomorphic-unfetch'

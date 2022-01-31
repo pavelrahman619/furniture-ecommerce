@@ -97,7 +97,7 @@
       font-weight: 300;
       line-height: 40px;
 
-      color: $black--two;
+      color: white;
     }
 
     .client-info {
@@ -106,14 +106,14 @@
         font-weight: 600;
         line-height: 25px;
 
-        color: $black--two;
+        color: $white;
       }
 
       .designation {
         font-size: 16px;
         line-height: 22px;
 
-        color: $grey;
+        color: white;
       }
     }
   }
@@ -124,14 +124,14 @@
 
       padding: 0 100px;
 
-      color: $white;
+      color: white;
 
 @include respond(large-mobile) {
         padding: 0 30px;
       }
 
       .text {
-        color: $white;
+        color: white;
       }
 
       .client-info {
